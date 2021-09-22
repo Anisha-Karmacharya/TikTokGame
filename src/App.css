@@ -1,5 +1,80 @@
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
+body {
+  font-size: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+li{
+  list-style: none;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgb(70, 110, 146);
+  border: 1px solid rgb(176, 213, 238);
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 80px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.button{
+  margin: 15px;
+  padding: 16px;
+  background-color: rgb(70, 110, 146);
+  color: aliceblue;
+  font-weight: 400;
+  border-radius: 10px;
+  font-size: 15px;
+  border: none;
+  letter-spacing: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
